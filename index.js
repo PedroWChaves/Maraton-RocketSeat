@@ -47,6 +47,6 @@ function fazerPergunta(){
   // disappear after 3 seconds
   setTimeout(function (){
     respostaElem.style.opacity = 0
-    buttonElem.setAttribute("disabled", false)
+    buttonElem.removeAttribute("disabled")
   }, 3000) 
 }
