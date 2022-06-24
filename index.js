@@ -33,7 +33,7 @@ function fazerPergunta(){
     return
   }
   //disable button
-  //buttonElem.setAttribute("disabled", true)
+  buttonElem.setAttribute("disabled", true)
 
   // copy asked question
   const pergunta = "<div>" + inputElem.value + "</div>"
@@ -47,6 +47,6 @@ function fazerPergunta(){
   // disappear after 3 seconds
   setTimeout(function (){
     respostaElem.style.opacity = 0
-    //buttonElem.removeAttribute("disabled")
+    buttonElem.removeAttribute("disabled")
   }, 3000) 
 }
